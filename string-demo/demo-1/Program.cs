@@ -10,8 +10,10 @@ namespace demo_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            //Comparison
+            var name = "Pesho";
+            bool check = name.Equals("pesho", StringComparison.InvariantCultureIgnoreCase);
+            Console.WriteLine(check);
         }
     }
 }
